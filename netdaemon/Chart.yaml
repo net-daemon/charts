@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 21.29.1
+name: netdaemon
+description: An application daemon for Home Assistant written in .NET 5.0
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+- netdaemon
+- home-automation
+- home-assistant
+home: https://github.com/net-daemon/charts
+icon: https://netdaemon.xyz/img/favicon.png
+sources:
+- https://github.com/net-daemon/netdaemon
+- https://github.com/net-daemon/netdaemon/pkgs/container/netdaemon
+- https://hub.docker.com/r/netdaemon/netdaemon
+maintainers:
+- name: BeeHiveJava
+  email: BeeHiveJava@users.noreply.github.com
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.0.1
